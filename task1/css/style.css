@@ -1,8 +1,18 @@
-
+@font-face {
+    font-family: 'HelveticaNeue-Regular';
+    src: local('HelveticaNeue-Regular'),
+          url( '../font/HelveticaNeue-Regular.eot') format('eot'),
+         url( '../font/HelveticaNeue-Regular.woff') format('woff'),
+         url( '../font/HelveticaNeue-Regular.ttf') format('ttf'),
+         url( '../font/HelveticaNeue-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 body{
    margin: 0;
    padding: 0;
-   font: 14px tahoma, verdana, sans-serif;
+   font-family: 'HelveticaNeue-Regular', tahoma, sans-serif;
+   font-size: 14px;
 }
 header{
    background: url(../img/bc_menu.png);
