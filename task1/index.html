@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/normalise.css">
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,24 +10,32 @@
 </head>
 <body>
    <header>
-      <ul class="menu">
+      <div class="wrapper">
+          <ul class="menu">
          <li class="menu-item"><a href="#" class="menu-link">Meu YouBike</a></li>
          <li class="menu-item"><a href="#" class="menu-link">Vender</a></li>
          <li class="menu-item"><a href="#" class="menu-link">Forum</a></li>
          <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
          <li class="menu-item"><a href="#" class="menu-link">Ajuda</a></li>
       </ul>
-      <div class="vline"></div>
-      <div class="name">
-         <img src="img/flag.png" alt="flag">
-         <a href="#" class="name-link">Minhas Ofertas</a>
-         <span>Ola! <a class="sign-link" href="#">Entrar</a> ou <a class="sign-link" href="#">Cadastre-se</a></span>
+          <div class="vline"></div>
+          <div class="name">
+             <a href="#" class="name-link"><img class="flag" src="img/flag.png" alt="flag">Minhas Ofertas</a>
+             <span class="registr">Ola! <a class="sign-link" href="#">Entrar</a> ou <a class="sign-link" href="#">Cadastre-se</a></span>
+      </div>
       </div>
    </header>
+   <div class="rasporka"></div>
    <div class="container">
       <div class="form-box">
-         <div class="cadastr"><p>Cadastre-se</p></div>
-         <div class="fb"><a class="fb-link" href="#"><img src="img/fb.png" alt="Facebook"></a></div>
+         <div class="cadastr">Cadastre-se</div>
+
+         <button class="fb-button" type="button" name="button">
+             <div class="fb-logo">f</div>
+             <div class="fb-line"></div>
+             <div class="fb-login">Log In <span class="light-font">with</span> Facebook <span class="arrow">&#8250;</span></div>
+         </button>
+
          <div class="ou">
             <div class="line"></div>
             <span>OU</span>
@@ -39,11 +47,11 @@
          <input type="password" name="name" value="" placeholder="Choose Password">
          <input type="password" name="name" value="" placeholder="Password Confirm">
          <div class="checkbox">
-            <input class="check" type="checkbox" name="name" value="">
-            <span class="check">Send me Youbike updates and tips</span>
+            <input class="check" type="checkbox" name="name" value="" id="send">
+            <label for="send" class="check">Send me Youbike updates and tips</label>
          </div>
-         <button type="button" name="button">Create my Account</button>
-         <p>By clicking the button above, you agree to the Terms of Service
+         <button class="create" type="button" name="button">Create my Account</button>
+         <p class="agremed">By clicking the button above, you agree to the Terms of Service
 Xiew our Privacy Policy.</p>
       </div>
    </div>
